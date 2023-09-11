@@ -56,9 +56,9 @@ public class UserRegistrationE2ETest {
 	}
 
 	@Test
-	public void testRegistrationWithEmptyUsername() {
-		// Prepare a registration request with an empty username
-		String requestBody = "{\"username\": \"\", \"password\": \"securepassword\"}";
+	public void testRegistrationWithInvalidUsername() {
+		// Prepare a registration request with an username less then 6 digits long
+		String requestBody = "{\"username\": \"12345\", \"password\": \"securepassword\"}";
 
 		// Send a POST request to the registration endpoint
 		Response response = given()
@@ -72,9 +72,9 @@ public class UserRegistrationE2ETest {
 	}
 
 	@Test
-	public void testRegistrationWithEmptyPassword() {
-		// Prepare a registration request with an empty password
-		String requestBody = "{\"username\": \"validuser\", \"password\": \"\"}";
+	public void testRegistrationWithInvalidPassword() {
+		// Prepare a registration request with an less then 8 digits long password
+		String requestBody = "{\"username\": \"validuser\", \"password\": \"1234567\"}";
 
 		// Send a POST request to the registration endpoint
 		Response response = given()
