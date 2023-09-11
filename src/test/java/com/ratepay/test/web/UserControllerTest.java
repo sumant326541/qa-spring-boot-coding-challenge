@@ -1,4 +1,4 @@
-package com.ratepay.test;
+package com.ratepay.test.web;
 
 import com.ratepay.test.model.User;
 import com.ratepay.test.service.UserService;

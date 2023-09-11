@@ -1,9 +1,8 @@
-package com.ratepay.test;
+package com.ratepay.test.service;
 
 import com.ratepay.test.exception.UnknownUserException;
 import com.ratepay.test.model.User;
 import com.ratepay.test.repository.UserRepository;
-import com.ratepay.test.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

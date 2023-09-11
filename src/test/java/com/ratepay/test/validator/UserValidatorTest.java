@@ -1,4 +1,4 @@
-package com.ratepay.test;
+package com.ratepay.test.validator;
 import com.ratepay.test.exception.ValidationError;
 import com.ratepay.test.model.User;
 import com.ratepay.test.service.UserService;
